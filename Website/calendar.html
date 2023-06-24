@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cenz and Kodes</title>
+    <meta name="description" content="A page for our life" />
+    <meta name="keywords" content="love anniversary Cenz Kodes" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/18044df53e.js" crossorigin="anonymous"></script>
+    <script>
+        let is_open = false;
+        function openNav() {
+            if (!is_open) {
+                /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+                document.getElementById("cal-sidebar").style.width = "250px";
+                document.getElementById("cal-sidebar").style.opacity = "100";
+                document.getElementById("calendar-widget").style.marginLeft = "250px";
+                is_open = true;
+            } 
+            else {
+                /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+                document.getElementById("cal-sidebar").style.width = "0";
+                document.getElementById("cal-sidebar").style.opacity = "0";
+                document.getElementById("calendar-widget").style.marginLeft = "0";
+                is_open = false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <button class="openbtn" onclick="openNav()"> <span style="font-size: 2em; color: #FAF3F3"><i class="fa-solid fa-bars"></i></span> <!--onclick="openNav()">&#9776;--></button>
+        <h1>Calendar</h1>
+    </div>
+    
+    <div class="side-bar" id="cal-sidebar">
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="photos.html">Photos</a>
+        <a href="love.html">Why I Love You</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="playlists.html">Playlists</a>
+        <a href="dates.html">Dates</a>
+    </div>
+    <div class="main-page" id="calendar-widget">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&title=Our%20Calendar%20%3C3&src=N2IzYjkwYTI4MGFjOTU4OGI3YWRiNDdhN2QwMGNkZmM5ZWUzOTkyNjMwZTdmODg5OWRmZjA1N2NkOTJlYWEzNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E&color=%2333B679" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: cursive-love;
+    src: url(LemonJellyPersonalUse-dEqR.ttf);
+}
+
+.* {
+    font-family: cursive-love;
+}
+
+body{
+    background-color: #FAF3F3;
+    margin: 0px;
+}
+
+.header {
+    background-color: #A7BBC7;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    display: inline;
+    align-content: center;
+}
+
+.openbtn {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    background-color: #A7BBC7;
+    border: none;
+    cursor:pointer;
+    /*hover;*/
+}
+
+h1{
+    align-self: center;
+    font-family: cursive-love;
+    font-size: 50px;  
+    margin: 0px;
+    /*color: #FAF3F3;*/
+}
+
+.rounded{
+    border-radius: 6px;
+}
+
+.side-bar {
+    height: 100%;
+    width: 0px;
+    opacity: 0;
+    margin-left: 0;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    margin-top: 50px;
+    background-color: #DA7F8F;
+    z-index: 2;
+    transition: .5s;
+}
+
+.side-bar>a {
+    font-family: cursive-love;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.main-page {
+    /*padding: 0px 0px 0px 10%;*/
+    /*margin-right: 0px;*/
+    padding-top: 50px;
+    /*padding-top: 36.4px;*/
+}
+
+.main-body{
+    position: relative;
+    margin-top: 10px;
+}
+
+.panel {
+    background-color: #E1E5EA;
+    position: relative;
+    width: 33%;
+    margin-left: 8.25%;
+    margin-right: 8.25%;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: cursive-love;
+    font-size: 30px;
+}
+
+#calendar-widget {
+    display: grid;
+    padding-top: 60px;
+    place-items: center;
+}
+
+#love-list{
+    position: relative;
+    background-color: #E1E5EA;
+    padding: 10px;
+}
+
