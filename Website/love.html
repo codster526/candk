@@ -5,23 +5,44 @@
     <meta name="description" content="A page for our life" />
     <meta name="keywords" content="love anniversary Cenz Kodes" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/18044df53e.js" crossorigin="anonymous"></script>
+    <script>
+        let is_open = false;
+        function openNav() {
+            if (!is_open) {
+                /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+                document.getElementById("love-bar").style.width = "250px";
+                document.getElementById("love-bar").style.opacity = "100";
+                document.getElementById("love-page").style.marginLeft = "250px";
+                is_open = true;
+            }
+            else {
+                /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+                document.getElementById("love-bar").style.width = "0";
+                document.getElementById("love-bar").style.opacity = "0";
+                document.getElementById("love-page").style.marginLeft = "0";
+                is_open = false;
+            }
+
+        }
+    </script>
 </head>
 <body>
     <div class="header">
         <button class="openbtn" onclick="openNav()"> <span style="font-size: 2em; color: #FAF3F3"><i class="fa-solid fa-bars"></i></span> <!--onclick="openNav()">&#9776;--></button>
         <h1>Reasons Why I Love You</h1>
     </div>
-    <div class="side-bar">
+    <div class="side-bar" id="love-bar">
         <a href="index.html">Home</a>
         <a href="calendar.html">Calendar</a>
-        <a href="photos.html">Photos</a>
+        <!--<a href="photos.html">Photos</a>-->
         <a href="love.html">Why I Love You</a>
-        <a href="quotes.html">Quotes</a>
-        <a href="playlists.html">Playlists</a>
+        <!--<a href="quotes.html">Quotes</a>
+        <a href="playlists.html">Playlists</a>-->
         <a href="dates.html">Dates</a>
     </div>
-    <div class="main-page">
-        <ul id="love-list">
+    <div class="main-page" id="love-page">
+        <ul class="rounded" id="love-list">
             <li>Your smile and the way always makes me happier</li>
             <li>The smell of your perfume</li>
             <li>How you listen to me and genuinely make me feel heard</li>
@@ -50,7 +71,7 @@
             <li>Your love bites <3</li>
             <li>Walks to class with you</li>
             <li>Laying in bed with you</li>
-            <li>Almost sex is literally heaven</li>
+            <li><s>Almost</s> sex is literally heaven</li>
             <li>How my face lights up even when I just think about you</li>
             <li>Your confidence</li>
             <li>How your eyes light up and you get excited but shy and humble all at the same time when you about something you're really into</li>

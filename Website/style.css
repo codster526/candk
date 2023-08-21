@@ -22,6 +22,7 @@ body{
     z-index: 1;
     display: inline;
     align-content: center;
+    margin-bottom: 5px;
 }
 
 .openbtn {
@@ -37,6 +38,7 @@ body{
 h1{
     align-self: center;
     font-family: cursive-love;
+    font-weight: normal;
     font-size: 50px;  
     margin: 0px;
     /*color: #FAF3F3;*/
@@ -79,7 +81,7 @@ h1{
 
 .main-body{
     position: relative;
-    margin-top: 10px;
+    padding-top: 55px;
 }
 
 .panel {
@@ -89,7 +91,7 @@ h1{
     margin-left: 8.25%;
     margin-right: 8.25%;
     margin-bottom: 10px;
-    float: left;
+    float: right;
     text-align: center;
     padding-bottom: 10px;
     font-family: cursive-love;
@@ -105,6 +107,19 @@ h1{
 #love-list{
     position: relative;
     background-color: #E1E5EA;
-    padding: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
 }
 
+.date-section {
+    position: relative;
+    background-color: #E1E5EA;
+    width: 33%;
+    margin-left: 7.25%;
+    margin-right: 7.25%;
+    margin-top: 10px;
+    padding-left: 2%;
+    float: left;
+}

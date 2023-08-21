@@ -5,22 +5,259 @@
     <meta name="description" content="A page for our life" />
     <meta name="keywords" content="love anniversary Cenz Kodes" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/18044df53e.js" crossorigin="anonymous"></script>
+    <script>
+        let is_open = false;
+        function openNav() {
+            if (!is_open) {
+                /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+                document.getElementById("dates-sidebar").style.width = "250px";
+                document.getElementById("dates-sidebar").style.opacity = "100";
+                document.getElementById("dates-page").style.marginLeft = "250px";
+                is_open = true;
+            }
+            else {
+                /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+                document.getElementById("dates-sidebar").style.width = "0";
+                document.getElementById("dates-sidebar").style.opacity = "0";
+                document.getElementById("dates-page").style.marginLeft = "0";
+                is_open = false;
+            }
+
+        }
+    </script>
 </head>
 <body>
     <div class="header">
         <button class="openbtn" onclick="openNav()"> <span style="font-size: 2em; color: #FAF3F3"><i class="fa-solid fa-bars"></i></span> <!--onclick="openNav()">&#9776;--></button>
         <h1>Our Dates</h1>
     </div>
-    <div class="side-bar">
+    <div class="side-bar" id="dates-sidebar">
         <a href="index.html">Home</a>
         <a href="calendar.html">Calendar</a>
-        <a href="photos.html">Photos</a>
+        <!--<a href="photos.html">Photos</a>-->
         <a href="love.html">Why I Love You</a>
-        <a href="quotes.html">Quotes</a>
-        <a href="playlists.html">Playlists</a>
+        <!--<a href="quotes.html">Quotes</a>
+        <a href="playlists.html">Playlists</a>-->
         <a href="dates.html">Dates</a>
     </div>
-    <div class="main-page">
+    <div class="main-page" id="dates-page">
+        <div class="date-section rounded">
+            <h2>Future Dates</h2>
+            <h3>A</h3>
+            <ul>
+                <li>Art Museum</li>
+                <li>Arcade</li>
+            </ul>
+            <h3>B</h3>
+            <ul>
+                <li>Baking</li>
+                <li>Beach</li>
+                <li>Board games</li>
+            </ul>
+            <h3>C</h3>
+            <ul>
+                <li>Cooking</li>
+            </ul>
+            <h3>D</h3>
+            <ul>
+                <li>Daytrip</li>
+            </ul>
+            <h3>E</h3>
+            <ul>
+                <li>Escape Room</li>
+            </ul>
+            <h3>F</h3>
+            <ul>
+                <li>Fishing</li>
+                <li>Farmers Market</li>
+                <li>Flower picking</li>
+                <li>Fondue</li>
+            </ul>
+            <h3>G</h3>
+            <ul>
+                <li>Go-karts</li>
+            </ul>
+            <h3>H</h3>
+            <ul>
+                <li>Hiking</li>
+            </ul>
+            <h3>I</h3>
+            <ul>
+                <li>Ice skating</li>
+            </ul>
+            <h3>J</h3>
+            <ul>
+                <li>Jigsaw puzzle</li>
+            </ul>
+            <h3>K</h3>
+            <ul>
+                <li>Kissing</li>
+                <li>Kayaking</li>
+                <li>Karaoke</li>
+            </ul>
+            <h3>L</h3>
+            <ul>
+                <li>Laser tag</li>
+            </ul>
+            <h3>M</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>N</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>O</h3>
+            <ul>
+                <li>Observatory</li>
+            </ul>
+            <h3>P</h3>
+            <ul>
+                <li>Painting</li>
+            </ul>
+            <h3>Q</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>R</h3>
+            <ul>
+                <li>Rollerskating</li>
+                <li>Rock climbing</li>
+            </ul>
+            <h3>S</h3>
+            <ul>
+                <li>Swim lessons</li>
+                <li>Sledding</li>
+                <li>Skiing</li>
+                <li>Shopping</li>
+            </ul>
+            <h3>T</h3>
+            <ul>
+                <li>Top golf</li>
+                <li>Thrifting</li>
+                <li>Tie dye</li>
+            </ul>
+            <h3>U</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>V</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>W</h3>
+            <ul>
+                <li>Wine Tasting</li>
+            </ul>
+            <h3>X</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>Y</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>Z</h3>
+            <ul>
+                <li>Zoo</li>
+            </ul>
+        </div>
+
+        <div class="date-section rounded">
+            <h2>Past Dates</h2>
+            <h3>A</h3>
+            <ul>
+                <li>Aquarium</li>
+            </ul>
+            <h3>B</h3>
+            <ul>
+                <li>Bread and Fred</li>
+            </ul>
+            <h3>C</h3>
+            <ul>
+            </ul>
+            <h3>D</h3>
+            <ul>
+                <li>Dinner</li>
+            </ul>
+            <h3>E</h3>
+            <ul>
+            </ul>
+            <h3>F</h3>
+            <ul>
+            </ul>
+            <h3>G</h3>
+            <ul>
+                <li>Golfing</li>
+            </ul>
+            <h3>H</h3>
+            <ul>
+            </ul>
+            <h3>I</h3>
+            <ul>
+                <li>Ice cream</li>
+            </ul>
+            <h3>J</h3>
+            <ul>
+            </ul>
+            <h3>K</h3>
+            <ul>
+            </ul>
+            <h3>L</h3>
+            <ul>
+            </ul>
+            <h3>M</h3>
+            <ul>
+                <li>Movie and dinner</li>
+            </ul>
+            <h3>N</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>O</h3>
+            <ul>
+            </ul>
+            <h3>P</h3>
+            <ul>
+            </ul>
+            <h3>Q</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>R</h3>
+            <ul>
+            </ul>
+            <h3>S</h3>
+            <ul>
+                <li>Spicy card game</li>
+            </ul>
+            <h3>T</h3>
+            <ul>
+            </ul>
+            <h3>U</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>V</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>W</h3>
+            <ul>
+            </ul>
+            <h3>X</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>Y</h3>
+            <ul>
+                <li></li>
+            </ul>
+            <h3>Z</h3>
+            <ul>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
